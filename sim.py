@@ -4,9 +4,9 @@
 
 复现命令：python3 sim.py
 
-本文件只检验 theory/theory.md ⑫ 交来的可证伪预言 D1–D6，不新增、不改写任何预言或假定。
-DGP 逐条回指 model/blueprint.md ⑥ 的冻结假定 A1 · A2 · A3a · A4a · A4b · A5 · A7；
-污染机制取 blueprint.md ② ③ 的加性局部误设 X = L + δ_n B（B 内生，进入 e 与 μ_d）。
+本文件只检验论文的可证伪预言 D1–D6，不新增、不改写任何预言或假定。
+DGP 逐条对应冻结假定 A1 · A2 · A3a · A4a · A4b · A5 · A7；
+污染机制取加性局部误设 X = L + δ_n B（B 内生，进入 e 与 μ_d）。
 
 三条铁律焊死在代码里：
   1. 主种子 + SeedSequence(master).spawn(R) 派生 R 条独立流（复制之间不相关）。
@@ -49,7 +49,7 @@ C_TILDE = (1 / E_EPS + 1 / (1 - E_EPS)) * C1_TILDE
 
 
 def gamma_bar_eff(dbar: float) -> float:
-    """blueprint ④ 的 Γ̄_eff = Γ̄ + C δ̄（候选甲）。"""
+    """Γ̄_eff = Γ̄ + C δ̄（候选甲）。"""
     return GAMMA_BAR + C_TILDE * dbar
 
 
