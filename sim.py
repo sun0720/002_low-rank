@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""h001 · 低秩局部误设下 oracle-L cross-fitted AIPW 的 Monte Carlo（econometric-simu ⑨节产物）。
+"""h001 · 低秩局部误设下 oracle-L cross-fitted AIPW 的 Monte Carlo。
 
 复现命令：python3 sim.py
 
@@ -13,7 +13,7 @@ DGP 逐条对应冻结假定 A1 · A2 · A3a · A4a · A4b · A5 · A7；
   2. 每个估计量返回 (点估计, 标准误)；覆盖率用估计出来的 V̂，不用真 V。
   3. 覆盖率等随机量一律报 Monte Carlo 标准误；分位数用 bootstrap 报 SE。
 
-产物：sim/results/results.csv · results_p9.csv · summary.txt · *.png
+产物：results/results.csv · results_p9.csv · summary.txt · *.png
 """
 from __future__ import annotations
 
@@ -1248,7 +1248,7 @@ def make_plots(rows, p9, outdir):
 # ── 7. 主程序 ─────────────────────────────────────────────────────────────
 def main():
     global MASTER_SEED
-    ap = argparse.ArgumentParser(description="h001 Monte Carlo（econometric-simu）")
+    ap = argparse.ArgumentParser(description="h001 Monte Carlo")
     ap.add_argument("--quick", action="store_true", help="快速冒烟（小 R / 小网格）")
     ap.add_argument("--seed", type=int, default=MASTER_SEED)
     ap.add_argument("--out", default=str(Path(__file__).resolve().parent / "results"))

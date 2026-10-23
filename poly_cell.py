@@ -9,7 +9,7 @@ rational-m_d designs of sim.py.
 
 Run from this directory:
     python3 poly_cell.py
-Writes sim/results/results_poly.csv.
+Writes results/results_poly.csv.
 """
 from __future__ import annotations
 

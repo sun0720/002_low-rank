@@ -28,7 +28,7 @@ support):
 
 Run from this directory:
     python3 approx_cell.py
-Writes sim/results/results_approx.csv.
+Writes results/results_approx.csv.
 """
 from __future__ import annotations
 

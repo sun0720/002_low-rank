@@ -15,7 +15,7 @@ are bias, naive and bias-aware coverage, shift, width, and Monte Carlo error.
 
 Run from this directory:
     python3 joint_grid.py
-Writes sim/results/results_joint_grid.csv.
+Writes results/results_joint_grid.csv.
 """
 from __future__ import annotations
 

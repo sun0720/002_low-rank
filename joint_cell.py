@@ -25,7 +25,7 @@ Proposition P8(iii) with a nonzero structural bias.
 
 Run from this directory:
     python3 joint_cell.py
-Writes sim/results/results_joint.csv.
+Writes results/results_joint.csv.
 """
 from __future__ import annotations
 
